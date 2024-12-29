@@ -1,0 +1,44 @@
+.cool {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.cool-title {
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.cool-list {
+    display: flex;
+    gap: 20px;
+}
+
+.cool-item {
+    & svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.nav {
+    background-color: rgba(18, 18, 18, 1);
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    width: 610px;
+}
+
+.item {
+    color: #fff;
+}
