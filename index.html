@@ -15,12 +15,12 @@
   </head>
   <body>
     <header class="header">
-      <div class="cool">
+      <div class="cool container">
         <h1 class="cool-title">COOL</h1>
         <ul class="cool-list">
           <li class="cool-item">
             <svg>
-              <use href="./img/symbol-defs.svg#icon-heart" class="heart"></use>
+              <use href="./img/symbol-defs.svg#icon-heart"></use>
             </svg>
           </li>
           <li class="cool-item">
@@ -36,26 +36,148 @@
         </ul>
       </div>
       <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav item">IPHONE</li>
-          <li class="nav item">IPAD</li>
-          <li class="nav item">WATCH</li>
-          <li class="nav item">MACBOOK</li>
-          <li class="nav item">IPHONE Б/В</li>
+        <ul class="nav-list container">
+          <li class="nav item"><a href="#" class="nav-link">IPHONE</a></li>
+          <li class="nav item"><a href="#" class="nav-link">IPAD</a></li>
+          <li class="nav item"><a href="#" class="nav-link">WATCH</a></li>
+          <li class="nav item"><a href="#" class="nav-link">MACBOOK</a></li>
+          <li class="nav item"><a href="#" class="nav-link">IPHONE Б/В</a></li>
         </ul>
       </nav>
+      <p class="way">
+        Головна/Вона/Одяг/<span style="color: #736a6a">Блузи</span>
+      </p>
     </header>
     <main>
-      <section class="buy"></section>
+      <section class="buy container">
+        <div class="buy-photo">
+          <ul class="buy-photo-list">
+            <li class="buy-photo-item">
+              <img
+                src="./img/white-1.jpg"
+                alt="photo of IPhone"
+                class="buy-photo-img"
+              />
+            </li>
+            <li class="buy-photo-item">
+              <img
+                src="./img/white-2.jpg"
+                alt="photo of IPhone"
+                class="buy-photo-img"
+              />
+            </li>
+            <li class="buy-photo-item">
+              <img
+                src="./img/white-3.jpg"
+                alt="photo of IPhone"
+                class="buy-photo-img"
+              />
+            </li>
+            <li class="buy-photo-item">
+              <img
+                src="./img/white-4.jpg"
+                alt="photo of IPhone"
+                class="buy-photo-img photo-active"
+              />
+            </li>
+          </ul>
+          <img
+            src="./img/white-4.jpg"
+            alt="photo of IPhone"
+            class="buy-main-photo"
+          />
+        </div>
+        <div class="buy-description">
+          <div style="display: flex; flex-direction: column">
+            <h3 class="buy-description-title">
+              Смартфон Apple iPhone 15 Pro Max 512GB eSim Natural Titanium
+            </h3>
+            <p class="buy-description-available">Є в наявності</p>
+          </div>
+          <ul class="buy-color-list">
+            <li class="buy-color-item">
+              <button class="buy-color-btn black"></button>
+            </li>
+            <li class="buy-color-item">
+              <button class="buy-color-btn white color-active"></button>
+            </li>
+            <li class="buy-color-item">
+              <button class="buy-color-btn green"></button>
+            </li>
+            <li class="buy-color-item">
+              <button class="buy-color-btn pink"></button>
+            </li>
+            <li class="buy-color-item">
+              <button class="buy-color-btn gold"></button>
+            </li>
+            <li class="buy-color-item">
+              <button class="buy-color-btn blue"></button>
+            </li>
+          </ul>
+          <p class="buy-description-subtitle">Пам'ять</p>
+          <ul class="buy-memory-list">
+            <li class="buy-memory-item">
+              <button class="buy-btn btn-active">512 GB</button>
+            </li>
+            <li class="buy-memory-item">
+              <button class="buy-btn">256 GB</button>
+            </li>
+            <li class="buy-memory-item">
+              <button class="buy-btn">128 GB</button>
+            </li>
+          </ul>
+          <p class="buy-description-subtitle">Версія</p>
+          <div class="version">
+            <ul class="buy-version-list">
+              <li class="buy-version-item">
+                <button class="buy-btn btn-active" style="width: 120px">
+                  e-SIM
+                </button>
+              </li>
+              <li class="buy-version-item">
+                <button class="buy-btn" style="width: 120px">Global</button>
+              </li>
+            </ul>
+            <p class="price">60 999₴</p>
+          </div>
+          <ul class="buy-list">
+            <li class="buy-item">
+              <button class="add-to-cart">
+                Додати у кошик
+                <svg width="27" height="27">
+                  <use
+                    href="./img/symbol-defs.svg#icon-buy"
+                    style="fill: #fff"
+                  ></use>
+                </svg>
+              </button>
+            </li>
+            <li class="buy-item">
+              <button class="add-to-favourite">
+                <svg width="27" height="27" style="fill: none">
+                  <use href="./img/symbol-defs.svg#icon-heart"></use>
+                </svg>
+                Обране
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
       <section class="recomended"></section>
     </main>
     <footer class="footer">
-      <h2 class="footer-title"></h2>
+      <h2 class="footer-title">COOL</h2>
       <ul class="footer-list">
-        <li class="footer-item"></li>
-        <li class="footer-item"></li>
-        <li class="footer-item"></li>
-        <li class="footer-item"></li>
+        <li class="footer-item">
+          <a href="#" class="footer-link">ЗАМОВЛЕННЯ ТА ДОСТАВКА</a>
+        </li>
+        <li class="footer-item"><a href="#" class="footer-link">НОВИНКИ</a></li>
+        <li class="footer-item">
+          <a href="#" class="footer-link">ХІТ ПРОДАЖ</a>
+        </li>
+        <li class="footer-item">
+          <a href="#" class="footer-link">КОНТАКТИ</a>
+        </li>
       </ul>
     </footer>
   </body>

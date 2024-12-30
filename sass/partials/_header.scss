@@ -35,10 +35,10 @@
 
 .nav-list {
     display: flex;
-    justify-content: space-around;
-    width: 610px;
+    justify-content: start;
+    gap: 75px;
 }
 
-.item {
+.nav-link {
     color: #fff;
 }
