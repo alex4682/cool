@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -211,7 +215,89 @@
           </div>
         </div>
       </section>
-      <section class="recomended"></section>
+      <section id="recommended-products" class="splide">
+        <h2 class="section-title">Рекомендовані товари</h2>
+        <div class="slider-center">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <!-- Слайд 1 -->
+              <li class="splide__slide">
+                <div class="product-card">
+                  <img
+                    src="./img/iphone16.jpg"
+                    alt="Apple iPhone 16 Pro Max 512GB Black Titanium"
+                    class="product-card__image"
+                  />
+                  <h3 class="product-card__name">
+                    Apple iPhone 16 Pro Max 512GB Black Titanium
+                  </h3>
+                  <p class="product-card__price">78 999 ₴</p>
+                  <button class="product-card__wishlist">
+                    <svg width="27" height="27" class="recomended-heart">
+                      <use href="./img/symbol-defs.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <!-- Слайд 2 -->
+              <li class="splide__slide">
+                <div class="product-card">
+                  <img
+                    src="img/iphone14plus.jpg"
+                    alt="Apple iPhone 14 Plus 512GB"
+                    class="product-card__image"
+                  />
+                  <h3 class="product-card__name">Apple iPhone 14 Plus 512GB</h3>
+                  <p class="product-card__price">56 999 ₴</p>
+                  <button class="product-card__wishlist">
+                    <svg width="27" height="27" class="recomended-heart">
+                      <use href="./img/symbol-defs.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <!-- Слайд 3 -->
+              <li class="splide__slide">
+                <div class="product-card">
+                  <img
+                    src="img/iphone14promax.jpg"
+                    alt="Apple iPhone 14 Pro Max 1T Silver"
+                    class="product-card__image"
+                  />
+                  <h3 class="product-card__name">
+                    Apple iPhone 14 Pro Max 1T Silver
+                  </h3>
+                  <p class="product-card__price">84 999 ₴</p>
+                  <button class="product-card__wishlist">
+                    <svg width="27" height="27" class="recomended-heart">
+                      <use href="./img/symbol-defs.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+              <!-- Слайд 4 -->
+              <li class="splide__slide">
+                <div class="product-card">
+                  <img
+                    src="img/iphone15promax.jpg"
+                    alt="Apple iPhone 15 Pro Max 1T Black Titanium"
+                    class="product-card__image"
+                  />
+                  <h3 class="product-card__name">
+                    Apple iPhone 15 Pro Max 1T Black Titanium
+                  </h3>
+                  <p class="product-card__price">74 999 ₴</p>
+                  <button class="product-card__wishlist">
+                    <svg width="27" height="27" class="recomended-heart">
+                      <use href="./img/symbol-defs.svg#icon-heart"></use>
+                    </svg>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <h2 class="footer-title">COOL</h2>
@@ -228,6 +314,8 @@
         </li>
       </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="js/accordion.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
