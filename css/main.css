@@ -90,6 +90,7 @@ body {
 .buy-main-photo {
   width: 550px;
   height: 723px;
+  background-size: cover;
 }
 
 .buy-description {
@@ -328,6 +329,15 @@ body {
 .photo4 {
   background-image: url(../img/white-4.jpg);
   background-size: contain;
+}
+
+.inCart {
+  background-color: rgb(43, 19, 181);
+}
+
+.favourite {
+  background-color: rgb(43, 19, 181);
+  color: #fff;
 }
 
 .section-title {

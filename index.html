@@ -59,13 +59,13 @@
       <section class="buy container">
         <div class="buy-photo">
           <ul class="buy-photo-list">
-            <li class="buy-photo-item photo1"></li>
+            <li class="buy-photo-item photo1" id="photo1"></li>
 
-            <li class="buy-photo-item photo2"></li>
-            <li class="buy-photo-item photo3"></li>
-            <li class="buy-photo-item photo4 photo-active"></li>
+            <li class="buy-photo-item photo2" id="photo2"></li>
+            <li class="buy-photo-item photo3" id="photo3"></li>
+            <li class="buy-photo-item photo4" id="photo4"></li>
           </ul>
-          <div class="buy-main-photo photo4"></div>
+          <div class="buy-main-photo photo4" id="mainPhoto"></div>
         </div>
         <div class="buy-description">
           <div style="display: flex; flex-direction: column">
@@ -133,7 +133,7 @@
           </div>
           <ul class="buy-list">
             <li class="buy-item">
-              <button class="add-to-cart">
+              <button class="add-to-cart" id="addToCart">
                 Додати у кошик
                 <svg width="27" height="27">
                   <use
@@ -144,7 +144,7 @@
               </button>
             </li>
             <li class="buy-item">
-              <button class="add-to-favourite">
+              <button class="add-to-favourite" id="addToFavourite">
                 <svg width="27" height="27">
                   <use href="./img/symbol-defs.svg#icon-heart"></use>
                 </svg>

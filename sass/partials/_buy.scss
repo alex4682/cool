@@ -28,6 +28,7 @@
 .buy-main-photo {
     width: 550px;
     height: 723px;
+    background-size: cover;
 }
 
 .buy-description {
@@ -274,4 +275,13 @@
 .photo4 {
     background-image: url(../img/white-4.jpg);
     background-size: contain;
+}
+
+.inCart {
+    background-color: rgba(43, 19, 181, 1);
+}
+
+.favourite {
+    background-color: rgba(43, 19, 181, 1);
+    color: #fff;
 }
