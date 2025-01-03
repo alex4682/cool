@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
@@ -29,7 +28,11 @@
           </li>
           <li class="cool-item">
             <svg>
-              <use href="./img/symbol-defs.svg#icon-search"></use>
+              <use
+                href="./img/symbol-defs.svg#icon-search"
+                width="32"
+                height="32"
+              ></use>
             </svg>
           </li>
           <li class="cool-item">
@@ -56,90 +59,74 @@
       <section class="buy container">
         <div class="buy-photo">
           <ul class="buy-photo-list">
-            <li class="buy-photo-item">
-              <img
-                src="./img/white-1.jpg"
-                alt="photo of IPhone"
-                class="buy-photo-img"
-              />
-            </li>
-            <li class="buy-photo-item">
-              <img
-                src="./img/white-2.jpg"
-                alt="photo of IPhone"
-                class="buy-photo-img"
-              />
-            </li>
-            <li class="buy-photo-item">
-              <img
-                src="./img/white-3.jpg"
-                alt="photo of IPhone"
-                class="buy-photo-img"
-              />
-            </li>
-            <li class="buy-photo-item">
-              <img
-                src="./img/white-4.jpg"
-                alt="photo of IPhone"
-                class="buy-photo-img photo-active"
-              />
-            </li>
+            <li class="buy-photo-item photo1"></li>
+
+            <li class="buy-photo-item photo2"></li>
+            <li class="buy-photo-item photo3"></li>
+            <li class="buy-photo-item photo4 photo-active"></li>
           </ul>
-          <img
-            src="./img/white-4.jpg"
-            alt="photo of IPhone"
-            class="buy-main-photo"
-          />
+          <div class="buy-main-photo photo4"></div>
         </div>
         <div class="buy-description">
           <div style="display: flex; flex-direction: column">
             <h3 class="buy-description-title">
-              Смартфон Apple iPhone 15 Pro Max 512GB eSim Natural Titanium
+              Смартфон Apple iPhone 15 Pro Max <span id="memory">512GB</span>
+              <span id="version">eSim</span>
+              <span id="color">Natural</span> Titanium
             </h3>
             <p class="buy-description-available">Є в наявності</p>
           </div>
           <ul class="buy-color-list">
             <li class="buy-color-item">
-              <button class="buy-color-btn black"></button>
+              <button class="buy-color-btn black" id="black"></button>
             </li>
             <li class="buy-color-item">
-              <button class="buy-color-btn white color-active"></button>
+              <button
+                class="buy-color-btn white color-active"
+                id="white"
+              ></button>
             </li>
             <li class="buy-color-item">
-              <button class="buy-color-btn green"></button>
+              <button class="buy-color-btn green" id="green"></button>
             </li>
             <li class="buy-color-item">
-              <button class="buy-color-btn pink"></button>
+              <button class="buy-color-btn pink" id="pink"></button>
             </li>
             <li class="buy-color-item">
-              <button class="buy-color-btn gold"></button>
+              <button class="buy-color-btn gold" id="gold"></button>
             </li>
             <li class="buy-color-item">
-              <button class="buy-color-btn blue"></button>
+              <button class="buy-color-btn blue" id="blue"></button>
             </li>
           </ul>
           <p class="buy-description-subtitle">Пам'ять</p>
           <ul class="buy-memory-list">
             <li class="buy-memory-item">
-              <button class="buy-btn btn-active">512 GB</button>
+              <button class="buy-btn btn-active" id="memory512">512 GB</button>
             </li>
             <li class="buy-memory-item">
-              <button class="buy-btn">256 GB</button>
+              <button class="buy-btn" id="memory256">256 GB</button>
             </li>
             <li class="buy-memory-item">
-              <button class="buy-btn">128 GB</button>
+              <button class="buy-btn" id="memory128">128 GB</button>
             </li>
           </ul>
           <p class="buy-description-subtitle">Версія</p>
           <div class="version">
             <ul class="buy-version-list">
               <li class="buy-version-item">
-                <button class="buy-btn btn-active" style="width: 120px">
+                <button
+                  class="buy-btn btn-active"
+                  style="width: 120px"
+                  id="eSim"
+                >
                   e-SIM
                 </button>
               </li>
               <li class="buy-version-item">
-                <button class="buy-btn" style="width: 120px">Global</button>
+                <button class="buy-btn" style="width: 120px" id="global">
+                  Global
+                </button>
               </li>
             </ul>
             <p class="price">60 999₴</p>
@@ -158,7 +145,7 @@
             </li>
             <li class="buy-item">
               <button class="add-to-favourite">
-                <svg width="27" height="27" style="fill: none">
+                <svg width="27" height="27">
                   <use href="./img/symbol-defs.svg#icon-heart"></use>
                 </svg>
                 Обране
@@ -215,7 +202,7 @@
           </div>
         </div>
       </section>
-      <section id="recommended-products" class="splide">
+      <section id="recommended-products" class="splide container">
         <h2 class="section-title">Рекомендовані товари</h2>
         <div class="slider-center">
           <div class="splide__track">
@@ -317,5 +304,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/phone.js"></script>
   </body>
 </html>

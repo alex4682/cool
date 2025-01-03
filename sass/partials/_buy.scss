@@ -16,7 +16,7 @@
     gap: 15px;
 }
 
-.buy-photo-img {
+.buy-photo-item {
     width: 130px;
     height: 170px;
 }
@@ -257,4 +257,21 @@
 
 .active:after {
     content: "\2227";
+}
+
+.photo1 {
+    background-image: url(../img/white-1.jpg);
+}
+
+.photo2 {
+    background-image: url(../img/white-2.jpg);
+}
+
+.photo3 {
+    background-image: url(../img/white-3.jpg);
+}
+
+.photo4 {
+    background-image: url(../img/white-4.jpg);
+    background-size: contain;
 }
