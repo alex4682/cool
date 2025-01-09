@@ -6,6 +6,20 @@
     align-items: center;
     height: 195px;
     margin-top: 25px;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 15px;
+        gap: 25px;
+        height: auto;
+
+        & .footer-list {
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+    }
 }
 
 .footer-title {
@@ -27,4 +41,8 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 1.3;
+
+    &:hover {
+        color: #2B13B5;
+    }
 }

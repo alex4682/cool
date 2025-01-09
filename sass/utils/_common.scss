@@ -4,6 +4,7 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 body {
@@ -14,4 +15,12 @@ body {
 .container {
     margin: 0 auto;
     width: 1400px;
+
+    @media screen and (max-width: 1400px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 95%;
+    }
 }
